@@ -1,0 +1,75 @@
+body {
+	background-color: black;
+	background: linear-gradient(to bottom, #121619, #2d2600) fixed; 
+}
+header {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	position: absolute;
+}
+h1 {
+	color: #e5c687;
+	font-size: 60px;
+	font-style: inherit;
+	font-family: revert;
+	letter-spacing: 3px;
+	font: italic;
+	box-sizing: border-box;
+	text-shadow: 3px 0px 5px pink;
+	text-align: center;
+}
+button {	
+	font-style: inherit;
+	font-family: revert;
+	letter-spacing: 3px;
+	font: italic;
+	color: #121619;
+	justify-content: space-evenly;
+	border-width: 3px;
+	width: 200px;
+	height: 50px;
+	border: solid;
+	font-size: 20px;
+	border-radius: 3px;
+	border-color: black;
+	background-color: #bcb382;
+}
+button:hover {
+	background-color: #bcb390;
+}
+/* colors 121619 2d4739 09814a bcb382 e5c687 */
+.test {
+	margin-top: 100%;
+}
+h2 {
+	text-align: center;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #e5c687;
+	font-style: inherit;
+	font-family: revert;
+	letter-spacing: 3px;
+	font: italic;
+	box-sizing: border-box;
+	text-shadow: 3px 0px 5px pink;
+}
+h3 {
+	color: #e5c687;
+	font-style: inherit;
+	font-family: revert;
+	letter-spacing: 3px;
+	font: italic;
+	box-sizing: border-box;
+	text-shadow: 3px 0px 5px pink;
+	text-align: center;
+}
+html {
+	scroll-behavior: smooth;
+	transition: ease 1s;
+}
+.totop {
+	position: sticky;
+	bottom: 10px;
+}

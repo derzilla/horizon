@@ -1,0 +1,31 @@
+<!DOCTYPE htlm>
+<html lang='ru'>
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewpoint' content='width=device-widtth, initial-scale=1.0'>
+	<link rel='stylesheet' href='../static/css/index.css'>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<title>test</title>
+</head>
+<body>
+	<div data-aos='fade-down' data-aos-duration='1000'>
+		<a href='../'><button>Главная</button></a>
+		<a href='/sovety'><button>Советы</button></a>
+	</div>
+	<h1 data-aos='zoom-in' data-aos-duration='1000'>horizon</h1>
+	<h1 data-aos='zoom-in' data-aos-duration='1000'>Самая актуальная новость</h1>
+	{% block news %}
+  	<div class="news--block">
+  	{% for item in news %}
+  		<div class="news--item" data-aos='fade-right' data-aos-duration='1000'>
+    	<h1>{{ item.header }}</h1>
+    	<h2>{{ item.body }}</h2>
+   		</div>
+  	{% endfor %}
+	{% endblock %}
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
+</html>
